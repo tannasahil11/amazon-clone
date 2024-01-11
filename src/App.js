@@ -1,19 +1,20 @@
 import "./App.css";
 import Header from "./Header.js";
 import Home from "./Home.js";
+import Checkout from "./Checkout.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Header />
         <Routes>
           <Route
             path="/checkout"
             element={
               <>
-                <Header />
-                <h1>This is the checkout page</h1>
+                <Checkout />
               </>
             }
           />
@@ -21,7 +22,6 @@ function App() {
             path="/"
             element={
               <>
-                <Header />
                 <Home />
               </>
             }
