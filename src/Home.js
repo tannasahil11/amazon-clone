@@ -40,7 +40,7 @@ function Home() {
             rating={5}
           />
           <Product
-            title="Logitech G PRO X Superlight Wireless Gaming Mouse, Ultra-Lightweight, Hero 25K Sensor, 25,600 DPI, 5 Programmable Buttons, Long Battery Life, Compatible with PC / Mac - Black"
+            title="Logitech G PRO X Superlight Wireless Gaming Mouse, Ultra-Lightweight, Hero 25K Sensor, 25,600 DPI"
             image="https://m.media-amazon.com/images/I/51uy8gOG-iL._AC_SL1400_.jpg"
             price={149.99}
             rating={4}

@@ -41,6 +41,13 @@
   width: 98%;
 }
 
+.input_name {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 98%;
+}
+
 .login_container > p {
   margin-top: 15px;
   font-size: 12px;
