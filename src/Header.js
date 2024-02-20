@@ -5,9 +5,11 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
-  const [{ basket, user, dispatch }] = useStateValue();
+  const [{ basket, user }] = useStateValue();
+  const navigate = useNavigate();
 
   const handleAuthentication = () => {
     if (user) {
@@ -41,7 +43,12 @@ function Header() {
           </div>
         </Link>
 
-        <div className="header_option">
+        <div
+          className="header_option"
+          onClick={() =>
+            user ? navigate("/orders") : alert("You are not signed in")
+          }
+        >
           <span className="header_optionLineOne">Returns</span>
           <span className="header_optionLineTwo">& Orders</span>
         </div>

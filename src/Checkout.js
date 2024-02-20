@@ -12,7 +12,6 @@ function Checkout() {
         <h1 className="checkout_title_main">
           Hello {user ? user.displayName : "Guest"}
         </h1>
-
         <h1 className="checkout_title">Shopping Cart</h1>
         {basket.map((item) => (
           <CheckoutProduct

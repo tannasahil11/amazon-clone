@@ -88,7 +88,7 @@ function Login() {
           </button>
         </form>
         <p>
-          By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use &
+          By signing-in you agree to the AMAZON CLONE'S Conditions of Use &
           Sale.
         </p>
         {
